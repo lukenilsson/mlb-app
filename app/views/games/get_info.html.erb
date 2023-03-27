@@ -5,16 +5,22 @@
   <h2><em><%=@game_data[index][:game_date]%></em></h2>
 </div>
 
-<div class="card">
-  <%while index < @game_data.length%>
+<div class="row">
+<div class="column">
 
+  <%while index < @game_data.length%>
+<div class="card">
   <div class="container">
-    <p><%=@game_data[index][:home_team]%></p>
-    <strong><p>Versus</strong>
+
     <p><%=@game_data[index][:away_team]%></p>
+    <strong><p>at</strong>
+    <p><%=@game_data[index][:home_team]%></p>
     <%=@game_data[index][:game_venue]%>
-    <%index += 1%>
-  <%end%>
-  
   </div>
 </div>
+    <%index += 1%>
+  <%end%>
+  </div>
+  </div>
+</div>
+  
