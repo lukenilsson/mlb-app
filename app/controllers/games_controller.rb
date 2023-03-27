@@ -22,16 +22,3 @@ class GamesController < ApplicationController
     render template: "games/get_info"
   end
 end
-
-# @games = data["dates"][0]
-# @games = data["dates"][0]["totalGames"]
-# @game_date = data["dates"][0]["games"][0]["officialDate"]
-# @home_team = data["dates"][0]["games"][0]["teams"]["home"]["team"]["name"]
-# @away_team = data["dates"][0]["games"][0]["teams"]["away"]["team"]["name"]
-
-# render json: {
-#   # game_date: @game_date,
-#   games: @games,
-# # home_team: @home_team,
-# # away_team: @away_team,
-# }
