@@ -13,8 +13,11 @@ class GamesController < ApplicationController
       {
         game_date: game["officialDate"],
         home_team: game["teams"]["home"]["team"]["name"],
+        home_score: game["teams"]["home"]["score"],
+        away_score: game["teams"]["away"]["score"],
         away_team: game["teams"]["away"]["team"]["name"],
         game_venue: game["venue"]["name"],
+      # game_time: game["gameDate"],
       }
     end
 

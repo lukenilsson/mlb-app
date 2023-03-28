@@ -9,15 +9,29 @@
 <div class="column">
 
   <%while index < @game_data.length%>
-<div class="card">
-  <div class="container">
+  <div class="card">
+    <div class="container">
 
-    <p><%=@game_data[index][:away_team]%></p>
-    <strong><p>at</strong>
-    <p><%=@game_data[index][:home_team]%></p>
-    <%=@game_data[index][:game_venue]%>
-  </div>
-</div>
+      <p>
+      <%=@game_data[index][:away_team]%>
+      <%=@game_data[index][:away_score]%>
+      </p>
+
+      <p><strong>at</strong></p>
+
+      <p>
+      <%=@game_data[index][:home_team]%>
+      <%=@game_data[index][:home_score]%>
+      
+      </p>
+
+      <p><%=@game_data[index][:game_venue]%></p>
+      <p><%=time = @game_data[index][:game_time]%></p>
+
+  
+
+    </div>
+    </div>
     <%index += 1%>
   <%end%>
   </div>

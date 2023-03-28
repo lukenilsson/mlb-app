@@ -9,15 +9,18 @@ h2 {
   color: navy;
   margin: auto;
 }
-/* Float four columns side by side */
+
 .column {
-  float: left;
-  width: 25%;
-  padding: 0 10px;
+  margin-right: 100px;
+  margin-left: 100px;
+  column-count: 2;
+ 
 }
 
-/* Remove extra left and right margins, due to padding in columns */
-.row {margin: 0 -5px;}
+
+.row {
+
+}
 
 /* Clear floats after the columns */
 .row:after {
@@ -28,13 +31,14 @@ h2 {
 .card {
   /* Add shadows to create the "card" effect */
   padding: 2px;
-  margin: 8px 0;
+  margin: 8px ;
   border: 2px solid black;
   width: 250px;
   box-shadow: 4px 4px 8px 4px rgba(0,0,0,0.2);
   transition: 0.3s;
   border-radius: 1px;
   background-color: lightgrey;
+  break-inside: avoid;
 }
 
 /* On mouse-over, add a deeper shadow */
@@ -47,5 +51,5 @@ h2 {
   padding: 2px 16px;
 }
 .card p {
-  margin: 14px 0;
+  margin: 5px;
 }
