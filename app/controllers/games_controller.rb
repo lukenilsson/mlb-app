@@ -17,8 +17,12 @@ class GamesController < ApplicationController
         away_score: game["teams"]["away"]["score"],
         away_team: game["teams"]["away"]["team"]["name"],
         game_venue: game["venue"]["name"],
-      # game_time: game["gameDate"],
+        game_time: game["gameDate"],
       }
+    end
+
+    @game_data.each do |game|
+      Game.create(game)
     end
 
     # render json: game_data.as_json

@@ -1,8 +1,14 @@
 
 <%index = 0%>
+<div class="header-image">
+<div class="header-text">
+
+<h1>Today's Baseball Games</h1>
+</div>
+</div>
 
 <div class="game-date">
-  <h2><em><%=@game_data[index][:game_date]%></em></h2>
+  <h2><%=@game_data[index][:game_date]%></h2>
 </div>
 
 <div class="row">
@@ -18,17 +24,23 @@
       <span class="score-box"> <%=@game_data[index][:away_score]%></span>
       </p> 
       </div>
-
+      <div class="bold">
       <p><strong>at</strong></p>
+      </div>
       <div class="home-team">
       <p>
       <%=@game_data[index][:home_team]%>
      <span class="score-box"><%=@game_data[index][:home_score]%></span>
       </p>
       </div>
-
-      <p><%=@game_data[index][:game_venue]%></p>
-      <p><%=time = @game_data[index][:game_time]%></p>
+      <div class="bold">
+      <p><strong><%=@game_data[index][:game_venue]%></strong></p>
+      </div>
+      <%
+=begin%>
+ <p><%=time = @game_data[index][:game_time]%></p> 
+<%
+=end%>
 
       
 

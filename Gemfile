@@ -45,6 +45,7 @@ gem "bootsnap", require: false
 gem "rest-client"
 gem "json"
 gem "strftime"
+gem "momentjs-rails"
 # Use Sass to process CSS
 # gem "sassc-rails"
 

@@ -1,13 +1,19 @@
 # Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
 one:
+  game_date: 2023-03-28
   home_team: MyString
+  home_score: MyString
+  away_score: MyString
   away_team: MyString
-  venue: MyString
-  date: MyString
+  game_venue: MyString
+  game_time: 2023-03-28 16:31:55
 
 two:
+  game_date: 2023-03-28
   home_team: MyString
+  home_score: MyString
+  away_score: MyString
   away_team: MyString
-  venue: MyString
-  date: MyString
+  game_venue: MyString
+  game_time: 2023-03-28 16:31:55
