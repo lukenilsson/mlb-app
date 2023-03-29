@@ -17,7 +17,13 @@
   </head>
 
   <body>
-  
+  <div class="header-image">
+
+
+<h1>Today's Baseball Games</h1>
+<h4><%=DateTime.now.strftime('%A %B %e %Y')%></h4>
+
+</div>
     <%= yield %>
   </body>
 </html>

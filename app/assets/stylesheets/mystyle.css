@@ -3,50 +3,69 @@ body {
   background-color: lightblue;
   width: 100vw;
   height: 100vh;
+  
 
 }
 h1 {
+  position: sticky;
+  top: 0;
+  padding: 40px;
   color: white;
   font-family: 'Oswald', sans-serif;
   font-weight: 600;
 }
 h2 {
   color: black;
-  margin: auto;
+  margin: 50;
   text-align: left;
   font-family: 'Darker Grotesque', sans-serif;
 
 }
 
+h4 {
+  position: sticky;
+  top: 0;
+font-size: 20px;
+  color: white;
+  font-family: 'Oswald', sans-serif;
+  font-weight: 600;
+}
+
 .header-image {
   background-image: url(https://scoreboardman.com/wp-content/uploads/2018/03/baseball-field-banner.jpg);
+  height:  100vh;
+ background-image: wrap;
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
   background-attachment: fixed;
+  
 
   text-align: center;
   font-size: 30px;
 }
 .header-text {
-  width: auto;
+  width: 50;
   text-align: center;
   font-size: 30px;
 }
-
-.column {
-  margin-right: 100px;
-  margin-left: 100px;
-  column-count: 2;
- 
-}
-
 
 .bold {
   font-weight: 200;
   font-size: 15px;
   font-family: 'Oswald', sans-serif;
 }
+
+.column {
+
+
+  column-count: 2;
+  margin-left: 15%;
+  
+
+ 
+}
+
 
 /* Clear floats after the columns */
 .row:after {
