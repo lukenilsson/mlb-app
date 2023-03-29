@@ -3,7 +3,8 @@ class GamesController < ApplicationController
   require "json"
 
   def get_info
-    url = "https://statsapi.mlb.com/api/v1/schedule/games/?sportId=1"
+    # url = "https://statsapi.mlb.com/api/v1/schedule/games/?sportId=1"
+    url = "https://statsapi.mlb.com/api/v1/schedule/games/?sportId=1&startDate=2023-03-28&endDate=2023-03-28"
     response = RestClient.get(url)
     data = JSON.parse(response.body)
 
